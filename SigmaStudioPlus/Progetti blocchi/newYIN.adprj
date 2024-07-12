@@ -1,0 +1,185 @@
+{
+  "WriteablePlugins": {
+    "$type": "System.Collections.ObjectModel.Collection`1[[AnalogDevices.Plugins.Designer.AlgorithmDesigner.Model.ISsPlugin, AlgorithmDesigner]], mscorlib",
+    "$values": [
+      {
+        "$type": "AnalogDevices.Plugins.Designer.AlgorithmDesigner.ModelInternal.SsPluginModel, AlgorithmDesigner",
+        "Name": "YINpitchEstimation",
+        "PluginVersion": "1.0.0.0",
+        "DesignerVersion": 4000,
+        "TargetInterface": "ISharcXIAlgorithm",
+        "ShapeCategory": 2,
+        "ProcessingType": 0,
+        "Caption": "YINestimation",
+        "UICaption": "YIN",
+        "Description": "YIN pitch estimation block, maximum project blockSize = 512",
+        "TreeHierarchy": "Custom Blocks.Pitch",
+        "Documentation": "",
+        "RestrictPlugin": false,
+        "DefaultExpandedUiReference": "",
+        "AlgorithmPluginName": "AnalogDevices.Plugins.Algorithms.Designer.ISharcXIAlgorithm.Block.YINpitchEstimation",
+        "ComputePluginName": "AnalogDevices.Plugins.ComputeFunctions.Designer.YINpitchEstimation",
+        "ControlPluginName": "AnalogDevices.Plugins.SigmaStudioControls.Algorithms.Designer.YINpitchEstimation",
+        "AbstractParameters": {
+          "$type": "System.Collections.ObjectModel.Collection`1[[AnalogDevices.Plugins.Designer.AlgorithmDesigner.Model.ISsAbstractParam, AlgorithmDesigner]], mscorlib",
+          "$values": [
+            {
+              "$type": "AnalogDevices.Plugins.Designer.AlgorithmDesigner.ModelInternal.SsAbstractParamModel, AlgorithmDesigner",
+              "Name": "Param0",
+              "DataType": 1,
+              "Value": 0.0,
+              "DefaultValue": 0.0,
+              "IsUIAssigned": false,
+              "DependencyProperty": "AP_Param0"
+            }
+          ]
+        },
+        "ModuleParameters": {
+          "$type": "System.Collections.ObjectModel.Collection`1[[AnalogDevices.Plugins.Designer.AlgorithmDesigner.Model.ISsModuleParam, AlgorithmDesigner]], mscorlib",
+          "$values": [
+            {
+              "$type": "AnalogDevices.Plugins.Designer.AlgorithmDesigner.ModelInternal.SsModuleParamModel, AlgorithmDesigner",
+              "Name": "a",
+              "IsBuffer": false,
+              "Formula": "Param0",
+              "Value": 0.0,
+              "Values": [],
+              "Offset": 0,
+              "IsSafeload": false,
+              "Group": "",
+              "DataFormat": "Float",
+              "DependencyProperty": ""
+            }
+          ]
+        },
+        "Pins": {
+          "$type": "System.Collections.ObjectModel.Collection`1[[AnalogDevices.Plugins.Designer.AlgorithmDesigner.Model.ISsPin, AlgorithmDesigner]], mscorlib",
+          "$values": [
+            {
+              "$type": "AnalogDevices.Plugins.Designer.AlgorithmDesigner.ModelInternal.SsPinModel, AlgorithmDesigner",
+              "Name": "Pin0",
+              "IsInput": true,
+              "DataType": "Audio",
+              "PinType": "Analog",
+              "DependencyProperty": ""
+            },
+            {
+              "$type": "AnalogDevices.Plugins.Designer.AlgorithmDesigner.ModelInternal.SsPinModel, AlgorithmDesigner",
+              "Name": "Pin1",
+              "IsInput": true,
+              "DataType": "Control",
+              "PinType": "Analog",
+              "DependencyProperty": ""
+            },
+            {
+              "$type": "AnalogDevices.Plugins.Designer.AlgorithmDesigner.ModelInternal.SsPinModel, AlgorithmDesigner",
+              "Name": "Pin2",
+              "IsInput": false,
+              "DataType": "Control",
+              "PinType": "Analog",
+              "DependencyProperty": ""
+            }
+          ]
+        },
+        "Properties": {
+          "$type": "System.Collections.ObjectModel.Collection`1[[AnalogDevices.Plugins.Designer.AlgorithmDesigner.Model.ISsProperty, AlgorithmDesigner]], mscorlib",
+          "$values": [
+            {
+              "$type": "AnalogDevices.Plugins.Designer.AlgorithmDesigner.ModelInternal.SsPropertyModel, AlgorithmDesigner",
+              "Name": "AP_Param0",
+              "DataType": 1,
+              "DefaultValue": 0.0,
+              "DependencyPostfix": null,
+              "PropertyUsage": 2,
+              "PropertyType": 0,
+              "UpdateDirection": 0,
+              "Description": "",
+              "ItemSource": [],
+              "DependencyProperty": ""
+            }
+          ]
+        },
+        "Assignments": {
+          "$type": "System.Collections.ObjectModel.Collection`1[[AnalogDevices.Plugins.Designer.AlgorithmDesigner.Model.ISsAssignment, AlgorithmDesigner]], mscorlib",
+          "$values": []
+        },
+        "MemorySize": {
+          "$type": "System.Collections.ObjectModel.Collection`1[[AnalogDevices.Plugins.Designer.AlgorithmDesigner.Model.ISsMemory, AlgorithmDesigner]], mscorlib",
+          "$values": [
+            {
+              "$type": "AnalogDevices.Plugins.Designer.AlgorithmDesigner.ModelInternal.SsMemoryModel, AlgorithmDesigner",
+              "Name": "State",
+              "Size": 1024,
+              "Formula": "1024"
+            },
+            {
+              "$type": "AnalogDevices.Plugins.Designer.AlgorithmDesigner.ModelInternal.SsMemoryModel, AlgorithmDesigner",
+              "Name": "State B",
+              "Size": 1024,
+              "Formula": "1024"
+            },
+            {
+              "$type": "AnalogDevices.Plugins.Designer.AlgorithmDesigner.ModelInternal.SsMemoryModel, AlgorithmDesigner",
+              "Name": "State C",
+              "Size": 1024,
+              "Formula": "1024"
+            },
+            {
+              "$type": "AnalogDevices.Plugins.Designer.AlgorithmDesigner.ModelInternal.SsMemoryModel, AlgorithmDesigner",
+              "Name": "State (Ext Pre)",
+              "Size": 0,
+              "Formula": "0"
+            },
+            {
+              "$type": "AnalogDevices.Plugins.Designer.AlgorithmDesigner.ModelInternal.SsMemoryModel, AlgorithmDesigner",
+              "Name": "Scratch (PM)",
+              "Size": 0,
+              "Formula": "0"
+            },
+            {
+              "$type": "AnalogDevices.Plugins.Designer.AlgorithmDesigner.ModelInternal.SsMemoryModel, AlgorithmDesigner",
+              "Name": "Scratch (DM)",
+              "Size": 0,
+              "Formula": "0"
+            }
+          ]
+        },
+        "ParamMemorySize": 1,
+        "RepCountProperty": null,
+        "RepCount2Property": null,
+        "ControlHeight": 64,
+        "ControlWidth": 88,
+        "UIControl": "&lt;UserControl xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;\r\n             xmlns:d=&quot;http://schemas.microsoft.com/expression/blend/2008&quot;\r\n             xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;\r\n             xmlns:mc=&quot;http://schemas.openxmlformats.org/markup-compatibility/2006&quot;\r\n             mc:Ignorable=&quot;d&quot;&gt;\r\n  &lt;Grid x:Name=&quot;_CVPSHBJ&quot; Width=&quot;117&quot; Height=&quot;116&quot;&gt;\r\n    &lt;TextBlock x:Name=&quot;_OCWPIDK&quot;\r\n               Width=&quot;75&quot;\r\n               Height=&quot;25&quot;\r\n               Margin=&quot;21,8,0,0&quot;\r\n               HorizontalAlignment=&quot;Left&quot;\r\n               VerticalAlignment=&quot;Top&quot;\r\n               FontSize=&quot;56&quot;\r\n               Text=&quot;YIN&quot;\r\n               Grid.Column=&quot;0&quot;\r\n               Grid.Row=&quot;0&quot; /&gt;\r\n  &lt;/Grid&gt;\r\n&lt;/UserControl&gt;",
+        "IsDynamicUI": false,
+        "UIDependencyProperty": "",
+        "UIDirection": "Horizontal",
+        "Code": "string.Empty",
+        "RawCode": "",
+        "SourceType": 2,
+        "CSourceCode": "\"#include \\\"adi_ss_extmod.h\\\" \\r\\n#include <math.h>\\r\\n\\r\\nvoid BPROCESS_YINpitchEstimation(SSBlockAlgo* pBlkAlgoInfo) \\r\\n{ \\r\\n\\tint i,cnt,sample, prjBlockSize, algBlockSize;\\r\\n\\tfloat fs, test, j,delta;\\r\\n\\tfloat fEst = 0;\\r\\n\\tfloat *pInput, *pOutput, *thrInput;\\r\\n\\tfloat *buffer;\\r\\n    //float *buffer = &((float *)pBlkAlgoInfo->pParam)[0];\\r\\n    algBlockSize =512;\\r\\n    float *buffer1;\\r\\n    float *buffer2;\\r\\n    prjBlockSize = pBlkAlgoInfo->pInputs[0].pBlockProperties->nBlockSize;\\r\\n\\t//carico la frequenza di sample\\r\\n\\tfs = pBlkAlgoInfo->pInputs[0].pBlockProperties->nSamplingRate;\\r\\n\\t//puntatore alla stateMemory\\r\\n\\tbuffer = (float*)(pBlkAlgoInfo->pStateB);\\r\\n\\tbuffer2 = (float*)(pBlkAlgoInfo->pStateC);\\r\\n\\tfloat *yinTemp = (float*)(pBlkAlgoInfo->pState);\\r\\n    //segnale audio in ingresso -> input 1\\r\\n\\tpInput = pBlkAlgoInfo->pInputs[0].pSamples;\\r\\n\\tthrInput = pBlkAlgoInfo->pInputs[1].pSamples;\\r\\n    pOutput = pBlkAlgoInfo->pOutputs[0].pSamples;\\r\\n\\r\\n    for(i = 0;i<algBlockSize-prjBlockSize;i++){\\r\\n        buffer[i] = buffer[i+prjBlockSize];\\r\\n    }\\r\\n\\r\\n    for(i = 0;i<prjBlockSize;i++){\\r\\n        buffer[algBlockSize-prjBlockSize+i] = pInput[i];\\r\\n    }\\r\\n    \\r\\n\\t//Eseguo la stima del pitch\\r\\n\\t// variabili / costanti necessarie \\r\\n\\t\\r\\n\\tbool flag = true;\\r\\n\\tfloat fmin = 80;\\r\\n\\tfloat yinTolerance = thrInput[0];\\r\\n\\t\\r\\n    \\tint taumax = 480; // round(1 / fmin * fs);\\r\\n    \\t\\r\\n   \\tint yinLen = algBlockSize - taumax;\\r\\n\\tint tau;\\r\\n\\t\\r\\n   \\t//calcolo delle differenze quadrate\\r\\n\\tfor (tau = 0; tau < taumax; tau++) {\\r\\n        \\tyinTemp[tau] = 0;\\r\\n        \\tfor (int j = 0; j < yinLen; j++) {\\r\\n        \\t\\tdelta = buffer[j] - buffer[j + tau];\\r\\n           \\t\\t yinTemp[tau] += delta*delta;\\r\\n        \\t}\\r\\n    \\t}\\r\\n    \\t\\r\\n    // Normalizzazione cumulata\\r\\n    float tmp = 0;\\r\\n    yinTemp[0] = 1;\\r\\n    for (tau = 1; tau < taumax; tau++) {\\r\\n        tmp += yinTemp[tau];\\r\\n        if(tmp!=0){\\r\\n        \\tyinTemp[tau] *= (tau / tmp);\\r\\n        }\\r\\n    }\\r\\n    \\r\\n      // Determinazione della pitch più bassa\\r\\n    tau = 0;\\r\\n    while ((tau < taumax) && flag) {\\r\\n        if ((yinTemp[tau] < yinTolerance) && (yinTemp[tau + 1] < yinTemp[tau])) {\\r\\n            // Ricerca del punto di inversione\\r\\n            while ((yinTemp[tau + 1] < yinTemp[tau]) &&(tau+2<taumax)) {\\r\\n                tau++;\\r\\n            }\\r\\n            if(tau >0){\\r\\n           \\t fEst = fs / tau;\\r\\n           \\t if(fEst<80){\\r\\n                buffer2[0] = fEst;\\r\\n                //salvare il sample in memoria\\r\\n           \\t }\\r\\n           \\t flag = false;\\r\\n           \\t }\\r\\n        } else {\\r\\n            tau++;\\r\\n        }\\r\\n    }\\r\\n\\r\\n    if(fEst<80){\\r\\n        fEst = buffer2[0];\\r\\n    }\\r\\n\\r\\n\\r\\n\\tfor(sample = 0; sample < prjBlockSize; sample++)\\r\\n\\t{\\r\\n\\t\\tpOutput[sample]= fEst;\\r\\n\\t}\\r\\n\\t\\r\\n\\t\\r\\n}\"",
+        "CHeaderFiles": {
+          "adi_ss_extmod.h": "\"/****************************************************************************\\r\\nCopyright (c) 2022 - Analog Devices Inc. All Rights Reserved.\\r\\nThis software is proprietary & confidential to Analog Devices, Inc.\\r\\nand its licensors.\\r\\n*****************************************************************************\\r\\n\\r\\nDescription: Common header file for implementing plugin modules.\\r\\n\\r\\n*****************************************************************************/\\r\\n\\r\\n#ifndef  __ADI_SS_EXTMOD_H__\\r\\n#define  __ADI_SS_EXTMOD_H__\\r\\n\\r\\n/*============= I N C L U D E S =============*/\\r\\n\\r\\n#include <platform_include.h>\\r\\n#include <adi_types.h>\\r\\n\\r\\n/*============= D E F I N E S =============*/\\r\\n\\r\\n\\r\\n/*=============  D A T A    T Y P E S   =============*/\\r\\n\\r\\n#if defined(_LANGUAGE_C)\\r\\n\\r\\n#ifdef __cplusplus\\r\\nextern \\\"C\\\" {\\r\\n#endif /* __cplusplus */\\r\\n\\r\\n/*\\r\\n**  Structure: BlockProperties\\r\\n**  Input/Output block property structure\\r\\n*/\\r\\n\\r\\ntypedef struct _BlockProperties\\r\\n{\\r\\n    int32_t     nSamplingRate;  /* Sample rate of the audio block */\\r\\n    int32_t     nBlockSize;     /* Block size of the audio block */\\r\\n    int32_t     nReserve0;      /* Reserved */\\r\\n    int32_t     nReserve1;      /* Reserved */    \\r\\n} BlockProperties;\\r\\n\\r\\n\\r\\n/*\\r\\n**  Structure: Block\\r\\n**  Input/Output block structure\\r\\n*/\\r\\n\\r\\ntypedef struct _Block\\r\\n{\\r\\n    BlockProperties *pBlockProperties;\\r\\n    float32_t       *pSamples;  /* Pointer to the sample buffer */    \\r\\n} Block;\\r\\n\\r\\n\\r\\n/*\\r\\n**  Structure: SSBlockAlgo\\r\\n**  Block algorithm argument structure\\r\\n*/\\r\\n\\r\\ntypedef struct _SSBlockAlgo\\r\\n{\\r\\n    int32_t     nInputs;        /* Number of input pins */\\r\\n    int32_t     nOutputs;       /* Number of output pins */\\r\\n    Block      *pInputs;        /* Pointer to array of block i/o mem structure */\\r\\n    Block      *pOutputs;       /* Pointer to array of block i/o mem structure */\\r\\n    \\r\\n    int32_t     nGrowth;        /* Indicates growth count */\\r\\n    int32_t     nGrowthB;       /* Secondary growth count */\\r\\n    \\r\\n    void       *pParam;         /* Pointer to parameter memory */\\r\\n    float32_t  *pState;         /* Pointer to state memory */\\r\\n    float32_t  *pScratchDM;     /* Pointer to scratch in DM memory */ \\r\\n    float32_t  *pScratchPM;     /* Pointer to scratch in PM memory */ \\r\\n    float32_t  *pStateB;        /* Pointer to state memory B */ \\r\\n    float32_t  *pStateC;        /* Pointer to state memory C */ \\r\\n    float32_t  *pExtPreState;   /* Pointer to extended precision state memory */\\r\\n    int32_t    *pExtSymbols;    /* Pointer to symbol address table */\\r\\n    float32_t  *pSharedMem;     /* Pointer to shared memory buffer in L2 */        \\r\\n} SSBlockAlgo;\\r\\n\\r\\n\\r\\n#ifdef __cplusplus\\r\\n}\\r\\n#endif  /* __cplusplus */\\r\\n\\r\\n#else   /* not _LANGUAGE_C */\\r\\n\\r\\n/* Assembler-specific definitions */\\r\\n\\r\\n#endif  /* _LANGUAGE_C */\\r\\n\\r\\n#endif /*__ADI_SS_EXTMOD_H__*/\\r\\n\\r\\n/*\\r\\n** EOF: \\r\\n*/\\r\\n\""
+        },
+        "EmbeddedDLBs": {},
+        "ReferencedDLBs": {},
+        "AlgorithmProperties": {
+          "$type": "System.Collections.ObjectModel.Collection`1[[System.String, mscorlib]], mscorlib",
+          "$values": []
+        },
+        "GenerateAlgorithm": true,
+        "GenerateCompute": true,
+        "ComputePluginReference": "AnalogDevices.Plugins.ComputeFunctions.Designer.YINpitchEstimation_v1.0.0.0",
+        "GenerateUI": true,
+        "ControlPluginReference": "AnalogDevices.Plugins.SigmaStudioControls.Algorithms.Designer.YINpitchEstimation_v1.0.0.0",
+        "GenerateControl": true
+      }
+    ]
+  },
+  "AssemblyTitle": null,
+  "AssemblyDescription": null,
+  "AssemblyCompany": null,
+  "AssemblyProduct": null,
+  "AssemblyCopyright": null,
+  "ComVisible": false,
+  "AssemblyVersion": "1.0.0.0"
+}
